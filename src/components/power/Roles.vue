@@ -6,7 +6,6 @@
       <el-breadcrumb-item>权限管理</el-breadcrumb-item>
       <el-breadcrumb-item>角色列表</el-breadcrumb-item>
     </el-breadcrumb>
-
     <!--卡片视图-->
     <el-card>
       <!-- 添加角色按钮区域-->
@@ -15,7 +14,6 @@
           <el-button type="primary" @click="addDialogVisible=true">添加角色</el-button>
         </el-col>
       </el-row>
-
       <!--角色列表区域-->
       <el-table :data="roleList" border stripe>
         <!--展开列-->
@@ -53,8 +51,8 @@
               </el-col>
             </el-row>
             <pre></pre>
-
           </template>
+
         </el-table-column>
         <!--索引列-->
         <el-table-column type="index"></el-table-column>
@@ -273,7 +271,6 @@ export default {
     editDialogClosed() {
       this.$refs.editFormRef.resetFields()
     },
-
 
     //修改角色信息并提交
     editRoleInfo() {
